@@ -1,0 +1,240 @@
+/* ScrollReveal base styles */
+[data-sr] {
+    visibility: hidden;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation delays */
+.sr-delay-1 {
+    --sr-delay: 0.1s
+}
+
+.sr-delay-2 {
+    --sr-delay: 0.2s
+}
+
+.sr-delay-3 {
+    --sr-delay: 0.3s
+}
+
+/* Performance optimizations */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Lazy loading for images */
+.lazy {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
+
+#loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+
+body.loading #loading-spinner {
+    display: block;
+}
+
+
+
+.img-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner.ratio {
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.navbar {
+    padding: 0.5rem 1rem ; 
+}
+.navbar .nav-link.active {
+    color: #00BFA6 !important;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+
+.nav-link.active::after {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: white;
+}
+
+
+.work-hero {
+    padding: 6rem 0;
+    background: #005f73;
+}
+
+.work-hero h1 {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.work-hero .lead {
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .work-hero {
+        padding: 8rem 0;
+    }
+
+    .work-hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+
+.hover-primary:hover {
+    color: #0d6efd !important;
+    transition: color 0.3s ease;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.navbar {
+    background-color: #1e1e1e;
+}
+
+section {
+    background-color: #1c1c1c;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+}
+
+.card {
+    background-color: #222;
+    color: #f1f1f1;
+}
+
+.card-body small.text-muted {
+    color: #bbb !important;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    color: #ddd;
+}
+
+.accordion-button {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #333;
+    color: #fff;
+}
+
+.accordion-body {
+    background-color: #2a2a2a;
+    color: #ddd;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #1a1a1a !important;
+}
+
+
+
+.progress {
+    background-color: #2a2a2a;
+}
+
+.progress-bar {
+    color: #fff;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #1c1c1c;
+}
+
+footer a {
+    color: #e0e0e0;
+}
+
+footer a:hover {
+    color: #00bcd4;
+}
+
+/* Border overrides */
+.border-secondary {
+    border-color: #333 !important;
+}
+
+
+
+
+
+/* dark theme */

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Navi Disha Foundation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+        <a class="navbar-brand" href="home.html">
+            <img src="./image/navi disha.png" class="rounded-circle me-2" width="80" alt="Navi Disha Logo">
+            <span class="fs-3 fw-bold">Navi Disha</span>
+        </a>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3">
+                        <a class="nav-link fs-5" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fs-5" href="portfolio.html">Gallery</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fs-5" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fs-5" href="work.html">Our Work</a>
+                    </li>
+
+                    <li class="nav-item ps-2">
+                        <a class="nav-link fs-5" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="donation-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Empower Change Today</h1>
+            <p class="lead fs-3 mb-5">Your donation creates lasting impact in education, healthcare, and livelihood</p>
+            <div class="campaign-progress mx-auto mb-4" style="max-width: 600px;">
+                <div class="campaign-progress-fill"></div>
+            </div>
+            <div class="d-flex justify-content-between mx-auto" style="max-width: 600px;">
+                <span>₹250,000 raised</span>
+                <span>₹1,000,000 goal</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="donation-card bg-white p-4 p-md-5">
+                        <h2 class="mb-4 text-center">Make a Donation</h2>
+
+                        <!-- Donation Amount Selection -->
+                        <div class="mb-5">
+                            <h5 class="mb-3 text-center">Select Donation Amount</h5>
+                            <div class="row">
+                                <div class="col-6 col-md-4 mb-3">
+                                    <div class="donation-option text-center active" data-amount="500">
+                                        <div class="donation-amount">₹500</div>
+                                        <small>Educate a child</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <div class="donation-option text-center" data-amount="1000">
+                                        <div class="donation-amount">₹1,000</div>
+                                        <small>Medical kit</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <div class="donation-option text-center" data-amount="2500">
+                                        <div class="donation-amount">₹2,500</div>
+                                        <small>Livelihood training</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <div class="donation-option text-center" data-amount="5000">
+                                        <div class="donation-amount">₹5,000</div>
+                                        <small>School supplies</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <div class="donation-option text-center" data-amount="10000">
+                                        <div class="donation-amount">₹10,000</div>
+                                        <small>Family support</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <div class="donation-option text-center" data-amount="other">
+                                        <div class="donation-amount">Other</div>
+                                        <small>Custom amount</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-amount-container mt-3" style="display: none;">
+                                <div class="input-group">
+                                    <span class="input-group-text">₹</span>
+                                    <input type="number" class="form-control custom-amount-input"
+                                        placeholder="Enter amount">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="mb-5">
+                            <h5 class="mb-3 text-center">Payment Method</h5>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="payment-method active">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod"
+                                                id="creditCard" checked>
+                                            <label class="form-check-label d-flex align-items-center" for="creditCard">
+                                                <i class="fab fa-cc-visa fa-2x text-primary me-3"></i>
+
+                                                <span>Credit/Debit Card</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="payment-method">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="upi">
+                                            <label class="form-check-label d-flex align-items-center" for="upi">
+                                                <i class="fas fa-mobile-alt fa-2x text-primary me-3"></i>
+                                                <span>UPI Payment</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="payment-method">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod"
+                                                id="netBanking">
+                                            <label class="form-check-label d-flex align-items-center" for="netBanking">
+                                                <i class="fas fa-university fa-2x text-primary me-3"></i>
+                                                <span>Net Banking</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="payment-method">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod"
+                                                id="wallet">
+                                            <label class="form-check-label d-flex align-items-center" for="wallet">
+                                                <i class="fas fa-wallet fa-2x text-primary me-3"></i>
+                                                <span>Wallet</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Donor Information -->
+                        <div class="mb-4">
+                            <h5 class="mb-3 text-center">Your Information</h5>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pan" class="form-label">PAN Number</label>
+                                <input type="text" class="form-control" id="pan">
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="anonymous">
+                                <label class="form-check-label" for="anonymous">
+                                    I would like to donate anonymously
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="newsletter" checked>
+                                <label class="form-check-label" for="newsletter">
+                                    Receive updates about our work
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-donate btn-lg w-100 mt-3">
+                            Donate Now <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Is my donation tax deductible?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, Navi Disha Foundation is registered under Section 80G of the Income Tax
+                            Act. Donations
+                            made to us are eligible for 50% tax exemption under this section. You will
+                            receive a receipt
+                            for your donation that can be used when filing your taxes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How will my donation be used?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Your donation will be used to support our programs in education, healthcare,
+                            environment,
+                            and livelihood. You can specify a particular program you'd like to support
+                            during the
+                            donation process. We maintain complete transparency in our fund utilization and
+                            publish
+                            annual reports detailing how funds are spent.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I donate monthly?
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutely! We encourage monthly donations as they help us plan our programs
+                            more
+                            effectively. During the donation process, simply select the "Monthly" option and
+                            your chosen
+                            amount will be automatically deducted each month. You can cancel or modify your
+                            monthly
+                            donation at any time.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border-0 shadow-sm">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What payment methods do you accept?
+                        </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We accept all major credit/debit cards (Visa, Mastercard, American Express,
+                            etc.), UPI
+                            payments (Google Pay, PhonePe, Paytm), net banking from all major Indian banks,
+                            and digital
+                            wallets. All transactions are processed through secure payment gateways.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 shadow-sm">
+                    <h3 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How can I get a receipt for my donation?
+                        </button>
+                    </h3>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You will automatically receive an email receipt immediately after your donation
+                            is
+                            processed. This receipt contains all the details needed for tax purposes. If you
+                            don't
+                            receive it, please check your spam folder or contact us at
+                            donations@navidisha.org and we'll
+                            resend it to you.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pe-lg-4">
+                        <a class="d-inline-block mb-3 text-decoration-none" href="home.html">
+                            <h2 class="h5 mb-3 text-white">Navi Disha Foundation</h2>
+                        </a>
+                        <p class="mb-4">We are a non-profit organization dedicated to creating sustainable change in
+                            education, healthcare, environment, and livelihood sectors.</p>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white text-decoration-none" aria-label="YouTube"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="h5 mb-4">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home.html"
+                                class="text-white text-decoration-none hover-primary">Home</a></li>
+                        <li class="mb-2"><a href="about.html"
+                                class="text-white text-decoration-none hover-primary">About Us</a></li>
+                        <li class="mb-2"><a href="work.html" class="text-white text-decoration-none hover-primary">Our
+                                Work</a></li>
+                        <li class="mb-2"><a href="portfolio.html"
+                                class="text-white text-decoration-none hover-primary">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white text-decoration-none hover-primary">Contact</a></li>
+                        <li class="mb-2"><a href="donation.html"
+                                class="text-white text-decoration-none hover-primary">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-4">Our Programs</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="work.html#education"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-graduation-cap me-2 text-primary"></i> Education Initiatives
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#medical"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-medkit me-2 text-primary"></i> Medical Camps
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#environment"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-tree me-2 text-primary"></i> Environment Projects
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#livelihood"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-hands-helping me-2 text-primary"></i> Livelihood Programs
+                            </a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-users me-2 text-primary"></i> Volunteer
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-4">Contact Us</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-map-marker-alt mt-1 me-2 text-primary"></i>
+                            <span>Kakade park chinchwad,Pune, Maharashtra 411001</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-phone mt-1 me-2 text-primary"></i>
+                            <span>+91 9876543210<br>+91 1234567890</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-envelope mt-1 me-2 text-primary"></i>
+                            <span>info@navidisha.org<br>support@navidisha.org</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-clock mt-1 me-2 text-primary"></i>
+                            <span>Monday - Friday<br>9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Navi Disha Foundation. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white text-decoration-none hover-primary">Privacy Policy</a></li>
+                        <li class="list-inline-item mx-2">•</li>
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white text-decoration-none hover-primary">Terms of Service</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

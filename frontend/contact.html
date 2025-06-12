@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Navi Disha Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Custom styles for contact page */
+        body {
+            overflow-x: hidden;
+            background-color: rgb(13, 11, 11);
+        }
+
+        .contact-hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .z-index-2 {
+            z-index: 2;
+            position: relative;
+        }
+
+        .contact-info-card {
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .map-container {
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .hover-primary:hover {
+            color: #0d6efd !important;
+        }
+
+        .social-icons a {
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-3px);
+            color: #0d6efd !important;
+        }
+
+        /* Animation delays for ScrollReveal  */
+        [data-sr-delay="200"] {
+            animation-delay: 0.2s !important;
+        }
+
+        [data-sr-delay="400"] {
+            animation-delay: 0.4s !important;
+        }
+
+        [data-sr-delay="600"] {
+            animation-delay: 0.6s !important;
+        }
+    </style>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <img src="./image/navi disha.png" class="rounded-circle me-2" width="80" alt="Navi Disha Logo">
+                <span class="fs-3 fw-bold d-none d-sm-inline">Navi Disha</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item px-lg-3 px-2">
+                        <a class="nav-link fs-5" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link fs-5" href="portfolio.html">Gallery</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link fs-5" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link fs-5" href="work.html">Our Work</a>
+                    </li>
+                    <li class="nav-item ps-lg-2 ps-2">
+                        <a class="nav-link active fs-5" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero position-relative vh-100 d-flex align-items-center">
+        <div class="video-background position-absolute w-100 h-100">
+            <video autoplay muted loop playsinline class="h-100 w-100 object-fit-cover">
+                <source src="./image/contactus.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay position-absolute w-100 h-100 bg-dark opacity-50"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="container position-relative z-index-2 bg-dark text-center text-white py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 display-md-1 mb-3 fw-bold" data-sr="enter from top">Contact Us</h1>
+                    <p class="lead fs-3 fs-md-4 mb-4" data-sr="enter from bottom" data-sr-delay="200">We'd love to hear
+                        from you</p>
+                    <a href="#contact-form" class="btn btn-light btn-lg px-4 py-3 mt-2 shadow-sm"
+                        data-sr="enter from bottom" data-sr-delay="400">
+                        <i class="fas fa-envelope me-2"></i> Send a Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 background">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <div class="contact-info-card card border-0 shadow-sm h-100 p-4" data-sr="enter from left">
+                        <h3 class="mb-4">Get in Touch</h3>
+
+                        <div class="d-flex mb-4" data-sr="enter from left" data-sr-delay="200">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Our Office</h5>
+                                <p class="mb-0">kakade park,chinchwad<br>Pune, India 411033</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4" data-sr="enter from left" data-sr-delay="300">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Call Us</h5>
+                                <p class="mb-0">
+                                    <a href="tel:+911123456789">+91 11 2345 6789</a><br>
+                                    <a href="tel:+919876543210">+91 98765 43210</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4" data-sr="enter from left" data-sr-delay="400">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Email Us</h5>
+                                <p class="mb-0">
+                                    <a href="mailto:info@navidishswam.org">info@navidisha.org</a><br>
+                                    <a href="mailto:support@navidishswam.org">support@navidisha.org</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex" data-sr="enter from left" data-sr-delay="500">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-clock fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Working Hours</h5>
+                                <p class="mb-0">Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 2PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm h-100" data-sr="enter from right">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Send Us a Message</h3>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6" data-sr="enter from right" data-sr-delay="200">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6" data-sr="enter from right" data-sr-delay="300">
+                                        <label for="email" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12" data-sr="enter from right" data-sr-delay="400">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="col-12" data-sr="enter from right" data-sr-delay="500">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12" data-sr="enter from right" data-sr-delay="600">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12" data-sr="enter from right" data-sr-delay="700">
+                                        <button type="submit" class="btn btn-primary px-4 py-2">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="pb-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-sr="enter from top">Our Location</h2>
+            <div class="map-container" data-sr="scale up 0.9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.213668742684!2d73.78622331541695!3d18.5671169873848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e1c0000001%3A0x9b5c1e6d1b5c1e6d!2sKakade%20Park%2C%20Chinchwad%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer CTA -->
+    <section class="py-5 bg-primary background text-white">
+        <div class="container text-center">
+            <h2 class="mb-4" data-sr="enter from top">Want to Volunteer With Us?</h2>
+            <p class="lead mb-4" data-sr="enter from bottom" data-sr-delay="200">Join our team of changemakers and
+                contribute your skills to meaningful causes</p>
+            <a href="#" class="btn btn-light btn-lg px-4" data-sr="enter from bottom" data-sr-delay="400">Apply Now</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pe-lg-4">
+                        <a class="d-inline-block mb-3 text-decoration-none" href="home.html">
+                            <h2 class="h5 mb-3 text-white">Navi Disha Foundation</h2>
+                        </a>
+                        <p class="mb-4">We are a non-profit organization dedicated to creating sustainable change in
+                            education, healthcare, environment, and livelihood sectors.</p>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white text-decoration-none" aria-label="YouTube"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="h5 mb-4">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home.html"
+                                class="text-white text-decoration-none hover-primary">Home</a></li>
+                        <li class="mb-2"><a href="about.html"
+                                class="text-white text-decoration-none hover-primary">About Us</a></li>
+                        <li class="mb-2"><a href="work.html" class="text-white text-decoration-none hover-primary">Our
+                                Work</a></li>
+                        <li class="mb-2"><a href="portfolio.html"
+                                class="text-white text-decoration-none hover-primary">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white text-decoration-none hover-primary">Contact</a></li>
+                        <li class="mb-2"><a href="donation.html"
+                                class="text-white text-decoration-none hover-primary">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-4">Our Programs</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="work.html#education"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-graduation-cap me-2 text-primary"></i> Education Initiatives
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#medical"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-medkit me-2 text-primary"></i> Medical Camps
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#environment"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-tree me-2 text-primary"></i> Environment Projects
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#livelihood"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-hands-helping me-2 text-primary"></i> Livelihood Programs
+                            </a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-users me-2 text-primary"></i> Volunteer
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-4">Contact Us</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-map-marker-alt mt-1 me-2 text-primary"></i>
+                            <span>Kakade park chinchwad,Pune, Maharashtra 411001</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-phone mt-1 me-2 text-primary"></i>
+                            <span>+91 9876543210<br>+91 1234567890</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-envelope mt-1 me-2 text-primary"></i>
+                            <span>info@navidisha.org<br>support@navidisha.org</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-clock mt-1 me-2 text-primary"></i>
+                            <span>Monday - Friday<br>9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Navi Disha Foundation. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white text-decoration-none hover-primary">Privacy Policy</a></li>
+                        <li class="list-inline-item mx-2">•</li>
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white text-decoration-none hover-primary">Terms of Service</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script>
+        // Initialize ScrollReveal with configuration
+        ScrollReveal().reveal('[data-sr]', {
+            origin: 'bottom',
+            distance: '20px',
+            duration: 800,
+            delay: 0,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            scale: 1,
+            mobile: true,
+            reset: false,
+            viewFactor: 0.2,
+        });
+
+        // Custom reveal configurations for specific elements
+        ScrollReveal().reveal('[data-sr="enter from top"]', {
+            origin: 'top',
+            distance: '30px'
+        });
+
+        ScrollReveal().reveal('[data-sr="enter from left"]', {
+            origin: 'left',
+            distance: '30px'
+        });
+
+        ScrollReveal().reveal('[data-sr="enter from right"]', {
+            origin: 'right',
+            distance: '30px'
+        });
+
+        ScrollReveal().reveal('[data-sr="scale up 0.9"]', {
+            scale: 0.9,
+            origin: 'center'
+        });
+
+        // Handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Here you would typically send the form data to your server
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocational Skills Portfolio - Navi Disha Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <img src="./image/navi disha.png" class="rounded-circle me-2" width="80" alt="Navi Disha Logo">
+                <span class="fs-3 fw-bold d-none d-sm-inline">Navi Disha</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item px-lg-3 px-2">
+                        <a class="nav-link fs-5" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link active fs-5" href="portfolio.html">Gallery</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link fs-5" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link fs-5" href="work.html">Our Work</a>
+                    </li>
+                    <li class="nav-item ps-lg-2 ps-2">
+                        <a class="nav-link fs-5" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Vocational Skills Portfolio</h1>
+            <p class="lead">Showcasing the talents and skills developed through our training programs</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Training Programs</h2>
+                <p class="lead">Browse through our vocational training categories</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="category-filter text-center">
+                <button class="btn btn-primary active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary" data-filter="tailoring">Tailoring</button>
+                <button class="btn btn-outline-primary" data-filter="beautician">Beautician</button>
+                <button class="btn btn-outline-primary" data-filter="computer">Computer Skills</button>
+                <button class="btn btn-outline-primary" data-filter="handicrafts">Handicrafts</button>
+                <button class="btn btn-outline-primary" data-filter="electrician">Electrician</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row" id="gallery-container">
+                <!-- Tailoring -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="tailoring">
+                    <img src="./image/Portfolio (16).jpg" alt="Tailoring Training">
+                    <div class="gallery-caption">
+                        <h5>Tailoring Training</h5>
+                        <p>Students learning sewing machine operation</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="tailoring">
+                    <img src="./image/Portfolio (15).jpg" alt="Dress Making">
+                    <div class="gallery-caption">
+                        <h5>Dress Making</h5>
+                        <p>Creating custom garments for local markets</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="tailoring">
+                    <img src="./image/Portfolio (14).jpg" alt="Fashion Design">
+                    <div class="gallery-caption">
+                        <h5>Fashion Design</h5>
+                        <p>Developing creative clothing designs</p>
+                    </div>
+                </div>
+
+                <!-- Beautician -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="beautician">
+                    <img src="./image/Portfolio (13).jpg" alt="Hair Styling">
+                    <div class="gallery-caption">
+                        <h5>Hair Styling</h5>
+                        <p>Learning modern hair care techniques</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="beautician">
+                    <img src="./image/Portfolio (11).jpg" alt="Makeup Artistry">
+                    <div class="gallery-caption">
+                        <h5>Makeup Artistry</h5>
+                        <p>Bridal and special occasion makeup training</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="beautician">
+                    <img src="./image/Portfolio (10).jpg" alt="Skin Care">
+                    <div class="gallery-caption">
+                        <h5>Skin Care</h5>
+                        <p>Facials and skin treatment techniques</p>
+                    </div>
+                </div>
+
+                <!-- Computer Skills -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="computer">
+                    <img src="./image/Portfolio (9).jpg" alt="Basic Computing">
+                    <div class="gallery-caption">
+                        <h5>Basic Computing</h5>
+                        <p>Introduction to computer operations</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="computer">
+                    <img src="./image/Portfolio (8).jpg" alt="Graphic Design">
+                    <div class="gallery-caption">
+                        <h5>Graphic Design</h5>
+                        <p>Learning design software applications</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="computer">
+                    <img src="./image/Portfolio (7).jpg" alt="Digital Marketing">
+                    <div class="gallery-caption">
+                        <h5>Digital Marketing</h5>
+                        <p>Social media and online business skills</p>
+                    </div>
+                </div>
+
+                <!-- Handicrafts -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="handicrafts">
+                    <img src="./image/Portfolio (6).jpg" alt="Pottery Making">
+                    <div class="gallery-caption">
+                        <h5>Pottery Making</h5>
+                        <p>Traditional clay pottery techniques</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="handicrafts">
+                    <img src="./image/Portfolio (5).jpg" alt="Bamboo Craft">
+                    <div class="gallery-caption">
+                        <h5>Bamboo Craft</h5>
+                        <p>Creating decorative bamboo products</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="handicrafts">
+                    <img src="./image/Portfolio (4).jpg" alt="Embroidery">
+                    <div class="gallery-caption">
+                        <h5>Embroidery</h5>
+                        <p>Hand and machine embroidery skills</p>
+                    </div>
+                </div>
+
+                <!-- Electrician -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="electrician">
+                    <img src="./image/Portfolio (3).jpg" alt="Wiring Techniques">
+                    <div class="gallery-caption">
+                        <h5>Wiring Techniques</h5>
+                        <p>Basic home electrical wiring training</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="electrician">
+                    <img src="./image/Portfolio (2).jpg" alt="Appliance Repair">
+                    <div class="gallery-caption">
+                        <h5>Appliance Repair</h5>
+                        <p>Fixing common household appliances</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="electrician">
+                    <img src="./image/Portfolio (1).jpg" alt="Solar Panel Installation">
+                    <div class="gallery-caption">
+                        <h5>Solar Panel Installation</h5>
+                        <p>Renewable energy technology training</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Stories -->
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Success Stories</h2>
+                    <p class="text-muted">Hear from individuals whose lives we've transformed</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-transform">
+                        <div class="square-img-container mx-auto mt-4">
+                            <img src="./image/3.jpg" class="rounded-circle profile-img"
+                                alt="Rina Sharma - Tailoring Graduate">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="mt-3">Rina Sharma</h5>
+                            <p class="text-muted mb-3">Tailoring Graduate</p>
+                            <div class="testimonial-content">
+                                <p class="mb-0">"After completing the tailoring course, I started my own boutique and
+                                    now employ 3 other women from my community."</p>
+                            </div>
+                            <div class="rating mt-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-transform">
+                        <div class="square-img-container mx-auto mt-4">
+                            <img src="./image/2.jpg" class="rounded-circle profile-img"
+                                alt="Arjun Patel - Electrician Graduate">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="mt-3">Arjun Patel</h5>
+                            <p class="text-muted mb-3">Electrician Graduate</p>
+                            <div class="testimonial-content">
+                                <p class="mb-0">"The skills I learned helped me start my own electrical services
+                                    business. I now earn enough to support my family."</p>
+                            </div>
+                            <div class="rating mt-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-transform">
+                        <div class="square-img-container mx-auto mt-4">
+                            <img src="./image/Portfolio (12).jpg" class="rounded-circle profile-img"
+                                alt="Priya Verma - Beautician Graduate">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="mt-3">Priya Verma</h5>
+                            <p class="text-muted mb-3">Beautician Graduate</p>
+                            <div class="testimonial-content">
+                                <p class="mb-0">"I went from being a housewife to running a successful beauty parlor
+                                    thanks to the training I received."</p>
+                            </div>
+                            <div class="rating mt-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Want to Join Our Programs?</h2>
+            <p class="lead mb-4">Transform your life with our vocational training courses</p>
+            <a href="contact.html" class="btn btn-light btn-lg me-3">Enroll Now</a>
+            <a href="programs.html" class="btn btn-outline-light btn-lg">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pe-lg-4">
+                        <a class="d-inline-block mb-3 text-decoration-none" href="home.html">
+                            <h2 class="h5 mb-3 text-white">Navi Disha Foundation</h2>
+                        </a>
+                        <p class="mb-4">We are a non-profit organization dedicated to creating sustainable change in
+                            education, healthcare, environment, and livelihood sectors.</p>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white text-decoration-none" aria-label="YouTube"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="h5 mb-4">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home.html"
+                                class="text-white text-decoration-none hover-primary">Home</a></li>
+                        <li class="mb-2"><a href="about.html"
+                                class="text-white text-decoration-none hover-primary">About Us</a></li>
+                        <li class="mb-2"><a href="work.html" class="text-white text-decoration-none hover-primary">Our
+                                Work</a></li>
+                        <li class="mb-2"><a href="portfolio.html"
+                                class="text-white text-decoration-none hover-primary">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white text-decoration-none hover-primary">Contact</a></li>
+                        <li class="mb-2"><a href="donation.html"
+                                class="text-white text-decoration-none hover-primary">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-4">Our Programs</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="work.html#education"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-graduation-cap me-2 text-primary"></i> Education Initiatives
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#medical"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-medkit me-2 text-primary"></i> Medical Camps
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#environment"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-tree me-2 text-primary"></i> Environment Projects
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#livelihood"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-hands-helping me-2 text-primary"></i> Livelihood Programs
+                            </a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-users me-2 text-primary"></i> Volunteer
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-4">Contact Us</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-map-marker-alt mt-1 me-2 text-primary"></i>
+                            <span>Kakade park chinchwad,Pune, Maharashtra 411001</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-phone mt-1 me-2 text-primary"></i>
+                            <span>+91 9876543210<br>+91 1234567890</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-envelope mt-1 me-2 text-primary"></i>
+                            <span>info@navidisha.org<br>support@navidisha.org</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-clock mt-1 me-2 text-primary"></i>
+                            <span>Monday - Friday<br>9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Navi Disha Foundation. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white text-decoration-none hover-primary">Privacy Policy</a></li>
+                        <li class="list-inline-item mx-2">•</li>
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white text-decoration-none hover-primary">Terms of Service</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

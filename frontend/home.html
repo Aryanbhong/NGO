@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navi Disha Foundation - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body class="loading">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <img src="./image/navi disha.png" class="rounded-circle me-2" width="80" alt="Navi Disha Logo">
+                <span class="fs-3 fw-bold d-none d-sm-inline">Navi Disha</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item px-lg-3 px-2">
+                        <a class="nav-link active fs-5" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link fs-5" href="portfolio.html">Gallery</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link fs-5" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-2">
+                        <a class="nav-link fs-5" href="work.html">Our Work</a>
+                    </li>
+                    <li class="nav-item ps-lg-2 ps-2">
+                        <a class="nav-link fs-5" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop id="bg-video">
+            <source src="./image/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="container text-center text-white sr-animate-group">
+            <h1 class="display-4 fw-bold sr-animate">Empowering Communities, Transforming Lives</h1>
+            <p class="lead sr-animate" style="--sr-delay: 0.2s">Join us in our mission to create sustainable change</p>
+            <div class="mt-4 sr-animate" style="--sr-delay: 0.4s">
+                <a href="work.html" class="btn btn-light btn-lg me-2">Our Programs</a>
+                <a href="donation.html" class="btn btn-outline-light btn-lg">Donate Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- Impact Stats -->
+    <section class="py-5 bg-light ">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 sr-animate" style=" --sr-delay: 0.2s">
+                    <div class=" counter-box">
+                        <i class="fas fa-school fa-3x text-primary mb-3"></i>
+                        <h2 class="counter" data-target="50">0</h2>
+                        <p>Schools Supported</p>
+                    </div>
+                </div>
+                <div class="col-md-3 sr-animate" style="--sr-delay: 0.2s">
+                    <div class="counter-box">
+                        <i class="fas fa-user-graduate fa-3x text-primary mb-3"></i>
+                        <h2 class="counter" data-target="2500">0</h2>
+                        <p>Children Educated</p>
+                    </div>
+                </div>
+                <div class="col-md-3 sr-animate" style="--sr-delay: 0.2s">
+                    <div class="counter-box">
+                        <i class="fas fa-hospital fa-3x text-primary mb-3"></i>
+                        <h2 class="counter" data-target="15">0</h2>
+                        <p>Medical Camps</p>
+                    </div>
+                </div>
+                <div class="col-md-3 sr-animate" style="--sr-delay: 0.2s">
+                    <div class="counter-box">
+                        <i class="fas fa-tree fa-3x text-primary mb-3"></i>
+                        <h2 class="counter" data-target="10000">0</h2>
+                        <p>Trees Planted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Focus Areas</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 program-card">
+                        <img src="./image/simonetta-pugnaghi-ad4urMzQb2I-unsplash.jpg" class="card-img-top"
+                            alt="Education">
+                        <div class="card-body">
+                            <h5 class="card-title">Education</h5>
+                            <p class="card-text">Providing quality education to underprivileged children through our
+                                network of schools and learning centers.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="work.html#education" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 sr-animate">
+                    <div class="card h-100 program-card">
+                        <img src="./image/mufid-majnun-ladIl7DD8nw-unsplash.jpg" class="card-img-top" alt="Medical">
+                        <div class="card-body">
+                            <h5 class="card-title">Medical Care</h5>
+                            <p class="card-text">Organizing health camps and providing medical assistance to rural
+                                communities.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="work.html#medical" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3  sr-animate" style="--sr-delay: 0.1s">
+                    <div class="card h-100 program-card">
+                        <img src="./image/equalstock-wsKfvr5AANg-unsplash.jpg" class="card-img-top" alt="Environment">
+                        <div class="card-body">
+                            <h5 class="card-title">Environment</h5>
+                            <p class="card-text">Promoting sustainable practices and conducting tree plantation drives.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="work.html#environment" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3  sr-animate" style="--sr-delay: 0.1s">
+                    <div class=" card h-100 program-card">
+                        <img src="./image/shirdi-sai-baba-society-qnVGc9la6Tw-unsplash.jpg" class="card-img-top"
+                            alt="Livelihood">
+                        <div class="card-body">
+                            <h5 class="card-title">Livelihood</h5>
+                            <p class="card-text">Skill development programs to empower women and youth for sustainable
+                                income.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="work.html#livelihood" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Join Our Mission</h2>
+            <p class="lead mb-4">Your support can help us reach more communities and create lasting impact</p>
+            <a href="donation.html" class="btn btn-light btn-lg me-3">Donate Now</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg">Volunteer</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What People Say</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4 sr-animate">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left fa-2x text-muted"></i>
+                            </div>
+                            <p class="card-text">Navi Disha transformed our village with their education program. My
+                                children now have access to quality schooling.</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="./image/bihar.jpg" class="rounded-circle me-3" width="50" alt="Testimonial">
+                                <div>
+                                    <h6 class="mb-0">Rajesh Kumar</h6>
+                                    <small class="text-muted">Village Head, Bihar</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4  sr-animate" style="--sr-delay: 0.1s">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left fa-2x text-muted"></i>
+                            </div>
+                            <p class="card-text">The medical camp organized by Navi Disha saved my mother's life.
+                                .They brought not just medical aid, but hope and
+                                comfort in our darkest hour</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="./image/1.jpg" class="rounded-circle me-3" width="50" alt="Testimonial">
+                                <div>
+                                    <h6 class="mb-0">Priya Sharma</h6>
+                                    <small class="text-muted">Beneficiary, Uttar Pradesh</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4  sr-animate" style="--sr-delay: 0.1s">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left fa-2x text-muted"></i>
+                            </div>
+                            <p class="card-text">After attending their skill development program, I started my own
+                                tailoring business and now support my family.</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="./image/3.jpg" class="rounded-circle me-3" width="50" alt="Testimonial">
+                                <div>
+                                    <h6 class="mb-0">Sunita Devi</h6>
+                                    <small class="text-muted">Entrepreneur, Jharkhand</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pe-lg-4">
+                        <a class="d-inline-block mb-3 text-decoration-none" href="home.html">
+                            <h2 class="h5 mb-3 text-white">Navi Disha Foundation</h2>
+                        </a>
+                        <p class="mb-4">We are a non-profit organization dedicated to creating sustainable change in
+                            education, healthcare, environment, and livelihood sectors.</p>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white me-3 text-decoration-none" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white text-decoration-none" aria-label="YouTube"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="h5 mb-4">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home.html"
+                                class="text-white text-decoration-none hover-primary">Home</a>
+                        </li>
+                        <li class="mb-2"><a href="about.html"
+                                class="text-white text-decoration-none hover-primary">About
+                                Us</a></li>
+                        <li class="mb-2"><a href="work.html" class="text-white text-decoration-none hover-primary">Our
+                                Work</a></li>
+                        <li class="mb-2"><a href="portfolio.html"
+                                class="text-white text-decoration-none hover-primary">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white text-decoration-none hover-primary">Contact</a></li>
+                        <li class="mb-2"><a href="donation.html"
+                                class="text-white text-decoration-none hover-primary">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-4">Our Programs</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="work.html#education"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-graduation-cap me-2 text-primary"></i> Education Initiatives
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#medical"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-medkit me-2 text-primary"></i> Medical Camps
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#environment"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-tree me-2 text-primary"></i> Environment Projects
+                            </a></li>
+                        <li class="mb-2"><a href="work.html#livelihood"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-hands-helping me-2 text-primary"></i> Livelihood Programs
+                            </a></li>
+                        <li class="mb-2"><a href="contact.html"
+                                class="text-white text-decoration-none hover-primary d-flex align-items-center">
+                                <i class="fas fa-users me-2 text-primary"></i> Volunteer
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-4">Contact Us</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-map-marker-alt mt-1 me-2 text-primary"></i>
+                            <span>Kakade park chinchwad,Pune, Maharashtra 411001</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-phone mt-1 me-2 text-primary"></i>
+                            <span>+91 9876543210<br>+91 1234567890</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-envelope mt-1 me-2 text-primary"></i>
+                            <span>info@navidisha.org<br>support@navidisha.org</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-clock mt-1 me-2 text-primary"></i>
+                            <span>Monday - Friday<br>9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Navi Disha Foundation. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white text-decoration-none hover-primary">Privacy Policy</a></li>
+                        <li class="list-inline-item mx-2">•</li>
+                        <li class="list-inline-item"><a href="#"
+                                class="text-white text-decoration-none hover-primary">Terms
+                                of Service</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
